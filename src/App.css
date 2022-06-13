@@ -1,0 +1,57 @@
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 300px;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.banner {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  color: rgb(214, 212, 212);
+}
+
+.banner::before {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  content: "";
+  background: linear-gradient(to right, black, transparent);
+}
+
+.banner-info {
+  width: 40%;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+.card {
+  width: 216px;
+  height: 220px;
+  cursor: pointer;
+}
+
+.overlay {
+  opacity: 0;
+  background-color: rgba(173, 170, 170, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .overlay {
+  opacity: 0.9;
+}
+
+.bodyC {
+  background-color: #171a1d;
+  color: rgb(90, 86, 86);
+}
